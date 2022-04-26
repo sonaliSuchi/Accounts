@@ -26,7 +26,7 @@ public class AccountController {
         @GetMapping("/{accNum}")
     public Account getAccount(@PathVariable BigInteger accNum)
     {
-        log.info("Account :: getAccount for {}",accNum);
+        log.info("Account :: getAccount  request for {}",accNum);
         return accountService.findAccountByAccNum(accNum);
     }
 
