@@ -19,7 +19,7 @@ public class AccountController {
     @PostMapping("/")
     public Account createAccount(@RequestBody Account account)
     {
-        log.info("Account :: create Department");
+        log.info("Account :: create Account");
         return accountService.createAccount(account);
     }
 
